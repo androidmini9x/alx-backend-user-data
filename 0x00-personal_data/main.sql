@@ -13,4 +13,3 @@ CREATE TABLE users (
 
 INSERT INTO users(email) VALUES ("bob@dylan.com");
 INSERT INTO users(email) VALUES ("bib@dylan.com");
-
