@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''Task 0: 0. Regex-ing
+'''Logger that parse a log with specific format
 '''
 from typing import List
 import re
