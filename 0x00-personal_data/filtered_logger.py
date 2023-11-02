@@ -75,9 +75,9 @@ def main() -> None:
     logger = get_logger()
     for row in cursor:
         data = ''.join(
-            ['{}={};'.format(k, v) for k, v in zip(fields, row)]
+            ['{}={}; '.format(k, v) for k, v in zip(fields, row)]
         )
-        logger.info(data)
+        logger.info(data.strip())
     cursor.close()
     db.close()
 
