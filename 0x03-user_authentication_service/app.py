@@ -79,7 +79,7 @@ def update_password() -> str:
     reset_token = request.form.get('reset_token')
     new_password = request.form.get('new_password')
 
-    if email is None or reset_password is None new_password is None:
+    if email is None or reset_password is None or new_password is None:
         abort(403)
 
     try:
